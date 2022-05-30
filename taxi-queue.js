@@ -32,8 +32,9 @@ function TaxiQueue(_peopleCount, _taxi) {
 	}
 
 	function taxiDepart(){
-		if (peopleCount >= 12) {
-			return taxiQueue =- taxiQueueLength(peopleCount - 12);
+		if (peopleCount > 12 && taxiQueue > 0) {
+			taxiQueue--; 
+			peopleCount = peopleCount - 12;
 		}
 	}
 
