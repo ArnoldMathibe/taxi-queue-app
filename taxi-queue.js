@@ -1,13 +1,13 @@
 function TaxiQueue(_peopleCount, _taxi) {
 	let peopleCount = 0;
 	let taxiQueue = 0;
-/*
+
 	if (_peopleCount) {
 		peopleCount = _peopleCount;
 	}
 	if (_taxi) {
-		taxi = _taxi;
-	}*/
+		taxiQueue = _taxi;
+	}
 
 	function joinQueue() {
 		return peopleCount++;
